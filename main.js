@@ -1,18 +1,22 @@
 // WEB COMPONENT
 class GaelComponent extends HTMLElement {
   connectedCallback() {
-    console.log("First Web component");
+    // console.log("First Web component");
     const name = this.getAttribute("name");
     // this.innerText = "Hello" + name;
     this.innerText = name;
-    console.log(name);
+    // console.log(name);
   }
 }
 
 // CARD WEB COMPONENT
 class CardComponent extends HTMLElement {
+  setCardActive() {
+    // console.log("Button was clicked...");
+    this.setAttribute("is-active", true);
+  }
   connectedCallback() {
-    console.log(this);
+    // console.log(this);
 
     // IMAGE LINK
     const $imgLink = document.createElement("a");
@@ -42,6 +46,14 @@ class CardComponent extends HTMLElement {
     $repoURL.href = this.getAttribute("repo-url");
     $repoURL.innerText = this.getAttribute("repo-url");
 
+    // ACTIVE BUTTON
+    const $activeButton = document.createElement("button");
+    $activeButton.innerText = "Active";
+    // Use: .bind(this) on the function call,
+    // to bind it to the class CardComponent instance (parent element in the HTML dom),
+    // instead of the button element, where we call the method connectedCallback()
+    $activeButton.addEventListener("click", this.setCardActive.bind(this));
+
     // APPEND
     $imgLink.append($img);
     this.append($imgLink);
@@ -49,6 +61,7 @@ class CardComponent extends HTMLElement {
     this.append($description);
     this.append($siteURL);
     this.append($repoURL);
+    this.append($activeButton);
   }
 }
 

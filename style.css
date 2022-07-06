@@ -38,3 +38,8 @@ card-component {
 card-component img {
   width: 100%;
 }
+
+/* IS ACTIVE */
+card-component[is-active="true"] {
+  border: 1px solid red;
+}
