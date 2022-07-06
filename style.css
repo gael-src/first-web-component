@@ -29,6 +29,7 @@ gael-component {
 /* This is a Web Component: */
 card-component {
   border: 1px solid grey;
+  margin: 10px;
   width: 250px;
   height: 500px;
   display: flex;
