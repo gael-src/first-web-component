@@ -1,3 +1,18 @@
 body {
   font-family: sans-serif;
 }
+
+/* This is a custom element: */
+gael-element {
+  color: red;
+  font-weight: bold;
+
+  /* display: block; */
+}
+
+/* This is a Web Component: */
+gael-component {
+  color: green;
+  font-weight: bold;
+  /* display: block; */
+}
