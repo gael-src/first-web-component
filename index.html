@@ -11,22 +11,38 @@
   <body>
     <h1>First Web Component</h1>
 
+    <div class="d-flex">
+      <section>
+        <list-org-repos org="internet4000"></list-org-repos>
+      </section>
+
+      <script
+        type="module"
+        src="https://cdn.skypack.dev/github-custom-elements"
+        defer
+      ></script>
+    </div>
+
     <!-- CUSTOM ELEMENT -->
     <!-- 
         This is a custom element:
             Declared with two words minimum, seperated by dashes.
             Just HTML, and optional CSS.
     -->
-    <gael-element>Hello</gael-element>
+    <div class="d-flex">
+      <gael-element>Hello</gael-element>
+    </div>
 
     <!-- WEB COMPONENT -->
     <!-- 
         This is a Web Component:
             Declared...
     -->
-    <gael-component name="001"></gael-component>
-    <gael-component name="002"></gael-component>
-    <gael-component name="003"></gael-component>
+    <div class="d-flex">
+      <gael-component name="001"></gael-component>
+      <gael-component name="002"></gael-component>
+      <gael-component name="003"></gael-component>
+    </div>
 
     <!-- CARD WEB COMPONENT -->
     <div class="d-flex">
