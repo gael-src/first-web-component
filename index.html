@@ -11,18 +11,6 @@
   <body>
     <h1>First Web Component</h1>
 
-    <div class="d-flex">
-      <section>
-        <list-org-repos org="internet4000"></list-org-repos>
-      </section>
-
-      <script
-        type="module"
-        src="https://cdn.skypack.dev/github-custom-elements"
-        defer
-      ></script>
-    </div>
-
     <!-- CUSTOM ELEMENT -->
     <!-- 
         This is a custom element:
@@ -76,6 +64,19 @@
         repo-url="https://github.com"
       >
       </card-component>
+    </div>
+
+    <!-- NPM IMPORTED INTERNET 4000 CUSTOM WEB COMPONENT -->
+    <div class="d-flex">
+      <section>
+        <list-org-repos org="internet4000"></list-org-repos>
+      </section>
+
+      <script
+        type="module"
+        src="https://cdn.skypack.dev/github-custom-elements"
+        defer
+      ></script>
     </div>
   </body>
 </html>
