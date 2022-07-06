@@ -11,6 +11,7 @@
   <body>
     <h1>First Web Component</h1>
 
+    <!-- CUSTOM ELEMENT -->
     <!-- 
         This is a custom element:
             Declared with two words minimum, seperated by dashes.
@@ -18,12 +19,50 @@
     -->
     <gael-element>Hello</gael-element>
 
+    <!-- WEB COMPONENT -->
     <!-- 
         This is a Web Component:
             Declared...
     -->
-    <gael-component>Hello</gael-component>
-    <gael-component>Hello</gael-component>
-    <gael-component>Hello</gael-component>
+    <gael-component name="001"></gael-component>
+    <gael-component name="002"></gael-component>
+    <gael-component name="003"></gael-component>
+
+    <!-- CARD WEB COMPONENT -->
+
+    <div class="d-flex">
+      <card-component
+        img-url="https://gael-src.github.io/assets/cleancode-joshua-sortino-unsplash.jpg"
+        img-alt="Image link"
+        name="card-001"
+        title="Project 001"
+        description="This is a description"
+        site-url="https://libli.org"
+        repo-url="https://github.com"
+      >
+      </card-component>
+
+      <card-component
+        img-url="https://gael-src.github.io/assets/cleancode-joshua-sortino-unsplash.jpg"
+        img-alt="Image link"
+        name="card-002"
+        title="Project 002"
+        description="This is a description"
+        site-url="https://libli.org"
+        repo-url="https://github.com"
+      >
+      </card-component>
+
+      <card-component
+        img-url="https://gael-src.github.io/assets/cleancode-joshua-sortino-unsplash.jpg"
+        img-alt="Image link"
+        name="card-003"
+        title="Project 003"
+        description="This is a description"
+        site-url="https://libli.org"
+        repo-url="https://github.com"
+      >
+      </card-component>
+    </div>
   </body>
 </html>

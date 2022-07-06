@@ -2,6 +2,15 @@ body {
   font-family: sans-serif;
 }
 
+.d-flex {
+  border: 1px solid grey;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 /* This is a custom element: */
 gael-element {
   color: red;
@@ -15,4 +24,17 @@ gael-component {
   color: green;
   font-weight: bold;
   /* display: block; */
+}
+
+/* This is a Web Component: */
+card-component {
+  border: 1px solid grey;
+  width: 250px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+card-component img {
+  width: 100%;
 }
