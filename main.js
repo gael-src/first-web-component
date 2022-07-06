@@ -12,8 +12,13 @@ class GaelComponent extends HTMLElement {
 // CARD WEB COMPONENT
 class CardComponent extends HTMLElement {
   setCardActive() {
-    // console.log("Button was clicked...");
-    this.setAttribute("is-active", true);
+    console.log(typeof this.getAttribute("is-active"));
+    if (this.getAttribute("is-active") === "true") {
+      this.setAttribute("is-active", false);
+    } else {
+      this.setAttribute("is-active", true);
+    }
+    // console.log(this.getAttribute("is-active"));
   }
   connectedCallback() {
     // console.log(this);
